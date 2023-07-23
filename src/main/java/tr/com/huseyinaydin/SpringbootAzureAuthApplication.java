@@ -1,0 +1,32 @@
+package tr.com.huseyinaydin;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+//بسم الله الرحمن الرحيم
+
+/**
+* 
+* @author Huseyin_Aydin
+* @since 1994
+* @category Java, Spring Boot.
+* 
+*/
+
+@SpringBootApplication
+@RestController
+@RequestMapping("/api")
+public class SpringbootAzureAuthApplication {
+
+	@GetMapping("/login")
+	public String welcome(){
+		return "Spring Boot + Azure Active Directory auth(kimlik doğrulaması!)";
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringbootAzureAuthApplication.class, args);
+	}
+}

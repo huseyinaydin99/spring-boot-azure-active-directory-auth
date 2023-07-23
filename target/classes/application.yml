@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    azure:
+      active-directory:
+        enabled: true
+        profile:
+          tenant-id: <Buraya Tenant ID'si gelecek!>
+        credential:
+          client-id: <Buraya istemci ID'si gelecek!>
+          client-secret: <Buraya istemci gizli ID'si gelecek!>
+
+server:
+  port: 8081
+  forward-headers-strategy: native
